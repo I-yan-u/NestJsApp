@@ -18,7 +18,7 @@ export class AppController {
 
 @Controller('/cats')
 export class CatController {
-  @Get()
+  @Get('/all')
   getCatGreet(name: string): string {
     return `All the cats are greeting you, ${name}`;
   }
